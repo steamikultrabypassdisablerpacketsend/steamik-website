@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/fontawesome.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
@@ -22,14 +23,11 @@
         <video autoplay loop muted poster="http" id="background"">
             <source src="images/video.mp4" type="video/mp4">
         </video>
-        <div id="overlay" onclick="play()"><span class="header center begin" id="status_text">♡ kliknij gdziekolwiek ♡</span>
-            <audio id="music" controls="true" src="music.mp3" loop="true" onplaying="" style="display: none;"></audio>
-        </div>
         <div class="center">
             <div class="list">
                 <div class="members">
                     <div class="card">
-                        <img class="pfp" src="images/trapstar.png" alt="a">
+                        <img class="pfp" src="images/avatar.png" alt="a">
                         <div class="username">Steamik</div>
                         <div class="sub"><span class="auto-type"</span></div>
                         <div class="socials">
@@ -38,32 +36,11 @@
                             <a href="https://steamcommunity.com/id/ST3AM1K/" target="_blank"><i class="fab fa-steam"></i></a>
                             <a href="https://www.youtube.com/watch?v=bome00Rhh7Q" target="_blank"><i class="fab fa-youtube"></i></a>
                             <a href="https://github.com/steamikultrabypassdisablerpacketsend" target="_blank"><i class="fab fa-github"></i></a>
-                            <div class="musicoff">Kliknij spacje, aby wylaczyc muzyke</div>
-                                                                                                       
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                                         
                         </div>
                     </div>
                 </div>
             </div>
-
-            <script>
-                $('.delay-2s').fadeOut(0)
-                $('.card').fadeOut(0)
-                $('.socials').fadeOut(0)
-
-                const play = function() {
-                    $('#overlay').fadeOut()
-
-                    music.play()
-                    setTimeout(goAnim, 4000);
-                }
-
-                const goAnim = function() {
-                    $('.delay-2s').fadeIn(100)
-                    $('.card').fadeIn(100)
-                    $('.socials').fadeIn(100)
-                    $('#main').effect("shake")
-                }
-            </script>
 
             <script>
 
