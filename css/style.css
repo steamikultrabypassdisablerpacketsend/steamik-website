@@ -101,6 +101,17 @@ body {
     color:#FFF;
     text-shadow:#ff6e00 0 1px,#fff 1px 0 15px,1px 1px
     }
+
+    .musicoff {
+        padding-top: 15px;
+        font-size: x-small;
+        position: absolute;
+        top: 280px;
+        left: 15px;
+        right: 15px;
+        color: #525050bd;
+        font-weight: bold;
+    }
     
     .card>.sub {
     font-size:smaller;
